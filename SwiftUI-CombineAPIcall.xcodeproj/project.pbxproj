@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		B580DA802B0FB07F001AB243 /* SwiftUI_CombineAPIcallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B580DA7F2B0FB07F001AB243 /* SwiftUI_CombineAPIcallApp.swift */; };
-		B580DA822B0FB07F001AB243 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B580DA812B0FB07F001AB243 /* ContentView.swift */; };
+		B580DA822B0FB07F001AB243 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B580DA812B0FB07F001AB243 /* TodoListView.swift */; };
 		B580DA842B0FB085001AB243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B580DA832B0FB085001AB243 /* Assets.xcassets */; };
 		B580DA872B0FB085001AB243 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B580DA862B0FB085001AB243 /* Preview Assets.xcassets */; };
 		B580DA912B0FB086001AB243 /* SwiftUI_CombineAPIcallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B580DA902B0FB086001AB243 /* SwiftUI_CombineAPIcallTests.swift */; };
 		B580DA9B2B0FB086001AB243 /* SwiftUI_CombineAPIcallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B580DA9A2B0FB086001AB243 /* SwiftUI_CombineAPIcallUITests.swift */; };
 		B580DA9D2B0FB086001AB243 /* SwiftUI_CombineAPIcallUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B580DA9C2B0FB086001AB243 /* SwiftUI_CombineAPIcallUITestsLaunchTests.swift */; };
+		B580DAAD2B0FB0FC001AB243 /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B580DAAC2B0FB0FC001AB243 /* TodoModel.swift */; };
+		B580DAAF2B0FB11B001AB243 /* TodoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B580DAAE2B0FB11B001AB243 /* TodoService.swift */; };
+		B580DAB12B0FB127001AB243 /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B580DAB02B0FB127001AB243 /* TodoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		B580DA7C2B0FB07F001AB243 /* SwiftUI-CombineAPIcall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-CombineAPIcall.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B580DA7F2B0FB07F001AB243 /* SwiftUI_CombineAPIcallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_CombineAPIcallApp.swift; sourceTree = "<group>"; };
-		B580DA812B0FB07F001AB243 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B580DA812B0FB07F001AB243 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
 		B580DA832B0FB085001AB243 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B580DA862B0FB085001AB243 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B580DA8C2B0FB086001AB243 /* SwiftUI-CombineAPIcallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-CombineAPIcallTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,9 @@
 		B580DA962B0FB086001AB243 /* SwiftUI-CombineAPIcallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-CombineAPIcallUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B580DA9A2B0FB086001AB243 /* SwiftUI_CombineAPIcallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_CombineAPIcallUITests.swift; sourceTree = "<group>"; };
 		B580DA9C2B0FB086001AB243 /* SwiftUI_CombineAPIcallUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_CombineAPIcallUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B580DAAC2B0FB0FC001AB243 /* TodoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		B580DAAE2B0FB11B001AB243 /* TodoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoService.swift; sourceTree = "<group>"; };
+		B580DAB02B0FB127001AB243 /* TodoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				B580DA7F2B0FB07F001AB243 /* SwiftUI_CombineAPIcallApp.swift */,
-				B580DA812B0FB07F001AB243 /* ContentView.swift */,
+				B580DAAA2B0FB0C9001AB243 /* Model */,
+				B580DAA92B0FB0B2001AB243 /* View */,
+				B580DAAB2B0FB0D1001AB243 /* ViewModel */,
 				B580DA832B0FB085001AB243 /* Assets.xcassets */,
 				B580DA852B0FB085001AB243 /* Preview Content */,
 			);
@@ -125,6 +133,31 @@
 				B580DA9C2B0FB086001AB243 /* SwiftUI_CombineAPIcallUITestsLaunchTests.swift */,
 			);
 			path = "SwiftUI-CombineAPIcallUITests";
+			sourceTree = "<group>";
+		};
+		B580DAA92B0FB0B2001AB243 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B580DA812B0FB07F001AB243 /* TodoListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B580DAAA2B0FB0C9001AB243 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B580DAAC2B0FB0FC001AB243 /* TodoModel.swift */,
+				B580DAAE2B0FB11B001AB243 /* TodoService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B580DAAB2B0FB0D1001AB243 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B580DAB02B0FB127001AB243 /* TodoViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B580DA822B0FB07F001AB243 /* ContentView.swift in Sources */,
+				B580DAAD2B0FB0FC001AB243 /* TodoModel.swift in Sources */,
+				B580DA822B0FB07F001AB243 /* TodoListView.swift in Sources */,
 				B580DA802B0FB07F001AB243 /* SwiftUI_CombineAPIcallApp.swift in Sources */,
+				B580DAB12B0FB127001AB243 /* TodoViewModel.swift in Sources */,
+				B580DAAF2B0FB11B001AB243 /* TodoService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
