@@ -8,9 +8,13 @@
 import Foundation
 import Combine
 
+struct APIEndpoints {
+    static let urlStr = "https://jsonplaceholder.typicode.com/todos"
+}
+
 class TodoService {
     
-    private let baseURL = URL(string: "https://jsonplaceholder.typicode.com/todos")!
+    private let baseURL = URL(string: APIEndpoints.urlStr)!
     
     func fetchTodos() -> AnyPublisher<[Todo], Error> {
         URLSession.shared.dataTaskPublisher(for: baseURL)
